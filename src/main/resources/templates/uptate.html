@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <script type="text/javascript" th:src="@{/js/jquery-3.1.1.min.js}"></script>
+</head>
+<body>
+<div>
+    <div id="wrapper" style="text-align:center">
+        <div id="f_title">学生信息修改</div><br>
+        <form th:action="@{/security/u}" method="post">
+            <div class="f_row">
+                <span>学号:</span>
+                <input type="text" class="form-control" th:value="${m.id}" name="id" placeholder="请输入账号">
+            </div>
+            <div class="f_row">
+                <span>修改密码:</span>
+                <input type="text" class="form-control" name="password" placeholder="请输入密码">
+            </div>
+            <div class="f_row">
+                <span>修改姓名:</span>
+                <input type="text" class="form-control" name="name" placeholder="请输入密码">
+            </div>
+            <br>
+            <div class="f_row">
+                <input type="submit" value=" 提交修改 "/>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="footer">
+    课程管理系统-测试版（版本:Beta1.0 Build:#1 2018-06-01）
+</div>
+</body>
+</html>

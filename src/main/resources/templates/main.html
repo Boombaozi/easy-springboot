@@ -12,6 +12,7 @@
     <div style="float:right; margin:10px;">
         操作员:[[${user.userName}]]&nbsp;
         <a th:href="@{/security/logout}" title="点击离开系统" id="logout"><span style="cursor: pointer" class="linkspan">离开系统</span></a>
+        <a th:href="'/ssm/security/u/'+${m.id}" title="修改学生信息" id="logout"><span style="cursor: pointer" class="linkspan">修改</span></a>
     </div>
 </div>
 <div>
